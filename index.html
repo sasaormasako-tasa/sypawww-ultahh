@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY SYPAA 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-glow: #ff69b4; 
+            --light-pink: #ffe4e1;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --header-font: 'Playfair Display', serif; 
+            --body-font: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--light-pink); /* Background pink lembut */
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden; /* Mencegah scroll horizontal karena animasi */
+        }
+
+        .card-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden; /* Untuk menahan animasi di dalam kartu */
+        }
+
+        h1 {
+            font-family: var(--header-font);
+            color: var(--pink-glow);
+            text-shadow: 0 0 10px var(--pink-glow);
+            font-size: 2.8em; 
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 10;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #c2185b;
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: left;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Gaya Teks dari Raisa */
+        .signature {
+            font-style: italic;
+            color: var(--pink-glow);
+            font-weight: 600;
+            margin-top: 25px;
+            text-align: right;
+            border-top: 1px dashed var(--light-pink);
+            padding-top: 10px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Animasi Kembang Api/Glitter */
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(1.5); }
+        }
+
+        .emoji-sparkle {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0;
+            animation: sparkle 3s infinite ease-out;
+        }
+
+        /* Posisi Emojis */
+        .emoji-sparkle:nth-child(1) { top: 10px; left: 10%; animation-delay: 0s; color: gold; }
+        .emoji-sparkle:nth-child(2) { top: 20%; right: 5%; animation-delay: 1s; color: var(--pink-glow); }
+        .emoji-sparkle:nth-child(3) { bottom: 10px; left: 5%; animation-delay: 0.5s; color: lightblue; }
+        .emoji-sparkle:nth-child(4) { bottom: 20%; right: 10%; animation-delay: 1.5s; color: var(--pink-glow); }
+
+        /* Animasi Hati (Flying Hearts) */
+        @keyframes fly {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            100% { transform: translateY(-100%) rotate(360deg); opacity: 0.8; }
+        }
+
+        .flying-heart {
+            position: fixed;
+            font-size: 2em;
+            color: #ff4d6a; /* Merah Muda Tua */
+            left: calc(var(--i) * 10%);
+            animation: fly 10s infinite linear;
+            animation-delay: calc(var(--i) * -1s);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="animation-wrapper">
+    <div class="flying-heart" style="--i:1;">💖</div>
+    <div class="flying-heart" style="--i:2;">✨</div>
+    <div class="flying-heart" style="--i:3;">💖</div>
+    <div class="flying-heart" style="--i:4;">✨</div>
+    <div class="flying-heart" style="--i:5;">💖</div>
+    <div class="flying-heart" style="--i:6;">✨</div>
+    <div class="flying-heart" style="--i:7;">💖</div>
+    <div class="flying-heart" style="--i:8;">✨</div>
+    <div class="flying-heart" style="--i:9;">💖</div>
+</div>
+
+
+<div class="card-container">
+    
+    <div class="emoji-sparkle">🎉</div>
+    <div class="emoji-sparkle">🎂</div>
+    <div class="emoji-sparkle">🎁</div>
+    <div class="emoji-sparkle">💖</div>
+
+    <h1>SELAMAT ULANG TAHUN BAD GIRL💗</h1>
+    <h2>UNTUK SYPA YANG NGESELIN N TENGIL !</H2>
+
+    <p>
+        Selamat ulang tahun ya, sypaa sayang, maaff banget ya aku telat ngasih kejutan ini buat kamu 🥺 inget ya sekali dari aku kamu jangan mudah percaya sama orang lain okay, jujur aku peduli banget sama kamu!
+    </p>
+
+    <p>
+        Tetap jadi pribadi yang lebihhhh baik lagi, jadi orang yang lucu, ceria, dan selalu bikin ketawa, jangan pernah berubah. Kecuali berubah jadi lebih kaya , itu boleh banget sayang ✨
+    </p>
+
+    <p>
+        Semoga semua impianmu (yang realistis, bukan yang cuma mimpi di siang bolong) bisa tercapai. Pokoknya doa yang terbaik, Love you sayaang 😍
+    </p>
+
+    <p class="signature">
+        Dari aku raisa yang imuupp 🤭✨
+    </p>
+</div>
+
+</body>
+</html>
